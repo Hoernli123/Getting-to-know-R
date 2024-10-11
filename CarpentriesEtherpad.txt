@@ -1,0 +1,638 @@
+Welcome to The Carpentries Etherpad!
+
+This pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents.
+
+Use of this service is restricted to members of The Carpentries community; this is not for general purpose use (for that, try https://etherpad.wikimedia.org).
+
+Users are expected to follow our code of conduct: https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html
+
+All content is publicly available under the Creative Commons Attribution License: https://creativecommons.org/licenses/by/4.0/
+
+Carpentry Website 
+
+https://lmu-osc.github.io/2024-10-10-LMU-Leo/
+Sticky notes: 🟩 = Done! 🟥 = Please help!
+
+ ----------------------------------------------------------------------------
+ 
+Day 1
+  
+9.00 - 10.30 Shell 
+
+Warm up: How are you feeling today?
+https://emojipedia.org/
+😊🫠😴👀✨😊💀✅😴😊😼🤩😊✨✨🔥
+
+
+✨Download files
+Download shell-lesson-data.zip and move the file to your Desktop. https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
+Unzip/extract the file. Let your instructor know if you need help with this step. You should end up with a new folder called shell-lesson-data on your Desktop.
+
+
+❓Questions
+(this is a space for you to ask questions)
+
+
+
+
+🗒️Collaborative notes
+
+    pwd : print working directory. See which directory where you are currently at
+
+    ls: list directories and files in the current directory, only names
+
+    ls -F: adds characters to differentiate between contents --> / = directory; @ = link; $ = files; * = executable
+
+    [command] --help: lists how you can use the command and which options there are (not for all commands, but usually! For this, 'man [command]' is also useful, e.g. 'man ls') - use man in MAC OS
+
+    pressing the upwards-arrow repeats the last command
+
+    cd [directory]: changes working directory; only works "downwards" --> use 'cd ..' to move up one directory level; if you only type cd and then press enter, it takes you back to the root directory
+
+    clear: clears the command window of all text
+
+    TAB completion: type out the (unique) beginning of the file/directory name and press TAB, the shell automatically completes the name of the file/directory under your current working directory
+
+
+
+🧠 Challenges (will be added) 
+
+Diagram url: https://swcarpentry.github.io/shell-novice/fig/filesystem-challenge.svg
+Using the filesystem diagram below, if pwd displays /Users/thing, what will ls -F ../backup display?
+
+    ../backup: No such file or directory
+
+2. 2012-12-01 2013-01-08 2013-01-27
+3. 2012-12-01/ 2013-01-08/ 2013-01-27/
+4. original/ pnas_final/ pnas_sub/
+
+(add +)
+1. ++
+2
+3.
+4. ++++++++++++
+
+
+
+⏰ BREAK TIME:  until 11.00
+
+
+ ----------------------------------------------------------------------------
+
+11.00 - 12.00 Shell (cont.)
+❓Questions
+(this is a space for you to ask questions)
+
+
+
+
+🗒️Collaborative notes
+
+    mkdir [name]: "make directory" --> creates a folder with the specified name; -p lets you create several (sub)folders at once (navigate with .. and specify new folders with /)
+
+    nano [name].txt: creates a file, in this case a .txt file --> upon pressing 'enter' the text editor opens
+
+    nano: Git Bash built-in text editor
+
+    after typing use Strg/Ctrl (^) and a letter (indicated in the bottom line) to use commands
+
+    mv [file/folder] [destination folder]: move a file or folder to the specified folder; mv [file] [new name]: just renames the specified file
+
+    cp [file] [folder]: copy a file and paste it into the specified folder; cp [file] [new name]: copy a file into the same folder but rename it
+
+    cp -r [folder] [folder]: use option -r to copy a folder and paste it into another folder ("-r" option mandatory for copying the entire folder)
+
+    rm [file]: removes/deletes file; use option -r to remove/delete folders
+
+
+🧠 Challenges (will be added) 
+
+
+⏰ BREAK TIME:  until 13:00
+
+
+Challenge 2
+Suppose that you created a plain-text file in your current directory to contain a list of the statistical tests you will need to do to analyze your data, and named it statstics.txt
+After creating and saving this file you realize you misspelled the filename! You want to correct the mistake, which of the following commands could you use to do so?
+
+    cp statstics.txt statistics.txt
+
+2. mv statstics.txt statistics.txt
+3. mv statstics.txt .
+4. cp statstics.txt .
+
+
+(add +)
+1.+
+2. ++++++++++++++++++
+3.
+4. 
+
+Feedback session
++ Good things
+ at lot of helpers+
++patiance
+Very clear+
+very easy to follow++
+everything explained in detail, no one gets left behind, friendly environment :)
++very comfortable speed (not too slow, not too fast)
+very cooperative and friendly
+easy, slowly building up
+lecturer did very detailed explantion, and volunteers are very helpful. Thanks!
++ clear and really patient, quick to resolve our questions. thanks!
+- very clear explanation
+interesting exercise 
++very nice for the beginers+
++ I have learned new things! :) +
+Very easy to follow with a lot of help and clear instructions available online
+very helpful, learned a lot of new things!
+
+- what to improve
+- it could go a little bit faster, especially for the very sinple very basic commands
+Went a little slowly+
+faster pace would be better
+more exercises
+- The beginning was a little slow
+- unable to understand the use of it (can't see big picture)
+very useful session
+could be a bit faster/more challenging
+it was a bit too slow, 
+initial introduction was not clear 
+- would be nice to have more exercises
+—could be more organized with section 1,2,3 +
+- could document the codes in a more organized way
+speaking sometimes very silent (please louder)
+-more exercises would be great
+more challenges
+Could go faster and speak a little louder
+could go a little faster
+
+ ----------------------------------------------------------------------------
+
+13.00 - 14.30 Git 
+
+❓Questions
+(this is a space for you to ask questions)
+
+
+
+
+🗒️Collaborative notes
+
+    Fun fact: Git was created for use in the development of the Linux kernel by Linus Torvalds and others developing the kernel.
+
+    git config --global: basic prefix for all commands to configurate Git
+
+    git config --global user.name "[name]": tell Git your name
+
+    git config --global user.email "[e-mail address]": tell Git your e-mail address
+
+    git config --global core.editor "nano -w": tell Git you want to use the text editor
+
+    git config --global init.defaultBranch main: 
+
+    git init: initiates a git repository; only start one in the main folder to track all changes in this folder and its sub-folders
+
+    git status: tells you the status of the initated git repositiory, e.g. which branch you are on, if there is anything to commit
+
+    rm -r .git: removes/deletes the git repository and therefore all your tracked changes (git stores everything under the hidden folder named ".git")
+
+    staging area: temporary changes will be "added" to the staging area (think of it as the short-term memory?)
+
+    repository: "commits" the changes to permanent history (think of it as the consolidated long-term memory?)
+
+    Make new markdown file: nano guacamole.md 
+
+    nano - your code editor
+
+    md extension allows you to format your text (.md stands for Markdown, funnily enough, Markdown is a Markup language haha)
+
+    https://en.wikipedia.org/wiki/Markdown
+
+    https://en.wikipedia.org/wiki/Markup_language
+
+    cat [file]: prints contents of the inidicated file
+
+    git add [file]: adds file to the staging area/changes are now tracked
+
+    git help: git option documentation
+
+    git commit -m "message": Commits changes to the repository/saves changes permanently (the message allows whoever reads this to understand what the purpose of this commit version is)
+
+    To make sure that a file/change will be tracked, use "add" to include it in the staging area so that git knows to perform version control on it. To combine the changes and save it forever, use "commit" to put it to the repository. (the prerequisite for "commit" is to "add" it first!)
+
+    Why separate add and commit? 1) More CONTROL, you can also do "partial commits", so you only add some of your files but not all, or separate changes in different parts of your project to separate commits  2) allows you to REVIEW changes before you make a commit version from it, 3) allows to BUNDLE multiple changes in multiple file under one commit (one "forever version")
+
+    When you make modifications to a file (before staging), if you track git status, it says "changes not staged for commit", and then suggests further actions to add it to git. Only after adding will you be able to  "commit" this to git branch
+
+    git log: tells you who made changes when to which files (commitment log in reverse chronological order)
+
+    git diff: tells you the differences between the current file (local, most updated version) and the last committed version; use option --staged to compare the latest committed version with the current staging area
+
+
+
+🧠 Challenges (will be added) 
+
+Which of the following commit messages would be most appropriate for the last commit made to guacamole.md?
+1. “Changes”
+2. “Changed lemon for lime”
+3. “Guacamole modified to the traditional recipe”
+
+(add +)
+1:
+2:+
+3:++++++++++
+
+Which command(s) below would save the changes of myfile.txt to my local Git repository?
+
+1:
+$ git commit -m "my recent changes"
+
+2:
+$ git init myfile.txt
+$ git commit -m "my recent changes"
+
+3:
+$ git add myfile.txt
+$ git commit -m "my recent changes"
+
+4:
+$ git commit -m myfile.txt "my recent changes”
+
+1:
+2:
+3:+++++++++++
+4:
+
+Multiple Files
+1. Makes changes in guacamole.md
+2. groceries.md
+3. add and commit both files
+
+New repo:
+1. New repository called bio
+2. Short biography in me.txt, commit changes
+3. Modify the file, write or remove something, change a line
+4. Display the differences between your current version and the latest commit
+
+
+⏰ BREAK TIME: until 15:00
+
+
+ ----------------------------------------------------------------------------
+
+15.00 - 16.00 Git (cont.)
+
+❓Questions 
+(this is a space for you to ask questions)
+
+
+
+
+
+🗒️Collaborative notes git 
+
+    Create a new repository on your GitHub account
+
+    Copy the SSH link
+
+    In your terminal, type: git remote add origin [GitHub SSH link] (right click on your mouse to paste the link)
+
+    git remote -v: indicates the connection (fetch and push) between online server and offline modifications
+
+    ssh-keygen -t ed25519 -C "your email address": generates key; ed25519 is an encryption code. afterwards you will see several prompts asking for the file in which you wish to store the key and the passphrase, you may simply click Enter for both if you do not want to specify it.
+
+    ls -al ~/.ssh: long lists all files (i.e. shows all files, directories, and details attributes for each file) including ones that start with a period. ~ is the root directory. This command shows the files in the .ssh folder and helps you retrieve your keys afterwards
+
+    cat ~/.ssh/id_ed25519.pub: retrieve your public key. Copy the whole key from your terminal and paste it into your GitHub authentication key (go to your profile > settings > SSH and GPG keys > click "New SSH Key")
+
+    ssh -T git@github.com: checks connection with GitHub. Read this for further info https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection
+
+    git push origin main: pushes current files to the (connected) main branch on the remote repository
+
+    in case an error arises, check git status first (command: git status). Read the notes on your repository and see if alternative commands are suggested. You might have to establish/specify the main branch first. Alternatively, google the error message and check for potential solutions
+
+    https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository
+
+    git pull origin main: retrieves and copies the files created remotely on the server to your working directory
+
+
+🧠 Challenges (will be added) 
+
+How would you undo making the current directory a Git repository?
+
+
+
+
+
+
+Feedback session
+
++ Good things
+interactive illustration of different parts of git repository
+good guidance for solutions to authentication or connection problems
+good manual
+very helpful, interactive, well explained
+very useful information
++good for the insights
+- too fast for the beginers
++ very useful session
++ Very interesting, we progressed more quickly
+Clear and easy to understand esp. illustrations
+useful and interesting course, interactive design, doable exercises 
+Good use of the online and offline tools with helpful instructors
+Very useful set up
+fast but very interactive season, thanks to all instructors and associates
+ it was fun to do exercises 
+ - good amount of exercises
+ very well articulated and interactive session
+ +a very good and useful start for the beginners
+ nice opportunities to try out commands and actions
+
+- What to improve
+incredibly fast, most times the instructor didnt explain why we were doign what.?!
+typing and talking at same time could follow. Would not be able to repeat any step which out the manual.
+in the morning i said it was a bit slow, now it was a bit fast and i would have likes some more context as to WHY we are doing this or that I agree!+ agree
+- too fast while typing commands and not explaining while typing
+super fast, reduce speed abit
+a little faster than before
+- In the end I didn't have much to do... 
+A little more on the concept behind git and its uses would be helpful
+I am still unsure what was the point of this course in github.
+a lil fast 
+Maybe would have been better to move the Git part to the 2nd day and include into the RStudio demo since it has version control too
+Sometimes a bit boring when sitting for 5+ minutes waiting for others to be helped with issues
+was a little fast than the first session
+
+Zoom workshops in the future?
+
+---------------------------------------------------------------------------------------------------------------------
+
+Day 2
+
+9.00 - 10.30 Introduction to R, Project management
+❓Questions
+(this is a space for you to ask questions)
+
+
+
+
+🗒️Collaborative notes
+
+    getwd(): similar to pwd in bash shell, returns the working directory path
+
+    Create a new porject: File > New project > R project > New Directory > Name the folder, choose the path, and select "create git directory". You should then be redirected to the new project directory in your console now.
+
+    Create a new R script: File > New File > R script. Use ctrl+enter (command+enter for Mac) to run single line(s) of command from the script
+
+    In case of a stalling action in the console when you run commands, check first for common errors e.g. trailing + signs, brackets, or missing arguments. You may click esc to break out of this.
+
+    # for adding notes and annotations in your code to make it easy to follow
+
+    ?[function name]: run this in the console to read up more about the function in the help page
+
+    [variable] <- [value]: assigns the variable to a value (numbers, Boolean), you will see all variables in the environment tab. You may overwrite this by making new assignments, and the value will be updated in the environment. When it comes to naming objects, be informative and consistent; you may concatenate multiple words for naming using underscores, numbers (not at the beginning though) or periods, avoid dashes (-) and spaces as these result in errors
+
+    R is case sensitive! If you cannot find a certain function/object, verify if you have a typo and if it is formatively correct, or if required packages are loaded
+
+    vectors: allows you to combine several values of the same attribute (numerical, strings, logical).
+
+    typeof(): checks the type of values stored in the vectors
+
+    install.packages("name of package"): installs the requested package; don't forget the quotation marks!
+
+    library(name of package): loads the installed package
+
+
+
+🧠 Challenges (will be added) 
+
+🧠 1.   Which of the following are valid R variable names?
+
+x = I think it is valid
+
+min_height - +xx++x+xx+xxx+xxx
+max.heightx+x+x+xx+x
+_age+--x+--+
+.mass+x-++x
+MaxLengthxxxx++x+x++-x    
+min-length------
+2widths+x+-----
+celsius2kelvinx-xx+x++x++-xx
+
+
+🧠 2. What will be the value of each variable after each statement in the following program?
+
+(Do not write the answer, we will discuss it)
+
+mass <- 47.5 
+age <- 122 
+mass <- mass * 2.3 
+age <- age - 20
+
+
+🧠 3. Run the code from the previous challenge, and write a command to compare mass to age. Is mass larger than age?
+
+(Do not write the answer, we will discuss it)
+
+
+
+🧠 4. Install the following packages: ggplot2, dplyr
+  💡Hint: Use install.packages(“packagename”) 
+
+Are you done? Put up your green sticker! 
+
+
+
+⏰ BREAK TIME:  until 11.00
+
+
+ ----------------------------------------------------------------------------
+ 
+11.00 - 12.00 Exploring data frames, Data wrangling with dplyr
+
+Dataset link - we will load it together, no need to do anything now: gapminderfilter
+❓Questions
+(this is a space for you to ask questions)
+
+
+
+
+🗒️Collaborative notes
+
+    load packages at the beginning of your script
+
+    download.file(url = "source url of the desired data", destfile = "file name"). Destination file is by default saved under your current working directory
+
+    read.csv("file name"): reads the csv file indicated
+
+    TAB completion also works in R (might be useful while typing package or file names)
+
+    head(): shows the first 6 observation; tail() shows the last 6
+
+    str(): structure of tbe data
+
+    ncol() and nrow(): shows the number of columns and rows in the data, respectively
+
+    colnames(): returns a vector with all column names
+
+    summary(): shows (mostly statistical) overview of the data (for strings it states that they are characters)
+
+    select(data, columns separated by commas) in dplyr: Keep or drop (by using - before the column name) columns using their names and types
+
+    pipes: takes the dataset/output of the function before the pipe as the input argument for that after it, creating a cascade of information. You may use the shortcut key ctrl + shift + M for the pipe (%>%). 
+
+    Different pipes https://www.tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/
+
+    filter(): Keep rows that match a condition. You may filter on multiple rows at once separated by commas (R assumes this as the AND operator); in case you wish to work with an OR operator, use the | sign
+
+    %in%: helps find the values encapsulated in the vector combination
+
+    distinct(): Keep unique/distinct rows
+
+
+🧠 Challenges (will be added) 
+
+
+⏰ BREAK TIME:  until 13.00
+
+ ----------------------------------------------------------------------------
+ 
+13.00 - 14.30 Data wrangling with dplyr (cont.) and tidyr
+❓Questions
+(this is a space for you to ask questions)
+
+
+
+
+🗒️Collaborative notes
+
+    Order of pipe matters!
+
+    !=: not equal to
+
+    summarise() or summarize(): these two are regarded as synonyms in R. Summarise each group down to one row
+
+    group_by(): group by one or more variables, separated by commas (order matters in terms of display)
+
+    slice(order_by = [values of variable], n = [number of results you wish to display]): Subset rows using their positions in a data frame
+
+    use [data frame]$[column name] to extract the information
+
+    count(): count the number of observations
+
+    mutate(): add a new column or rewrite an existing one
+
+    round(): rounds the number, by default it sets the decimal place to be 0 (i.e. rounded to integers)
+
+    write.csv(data, "file name"): writes the data frame into a new file
+
+    Since we initiated the git in our working directory, there is the option of adding and committing the files on the terminal (e.g. Git Bash, R terminal) to your repository
+
+    ifelse(test, yes, no): provides a test (e.g. logical judgment), returns values for TRUE and FALSE outcome (could be strings)
+
+
+🧠 Challenges (will be added) 
+
+🧠 1. Write a single command (which can span multiple lines and includes pipes) that will produce a data frame that has the African values for lifeExp, country and year, but not for other Continents. How many rows does your data frame have and why?
+
+🧠 2. Calculate the average life expectancy per country. Which has the longest average life expectancy and which has the shortest average life expectancy?
+
+💡 You can use the built-in functions min() and max() to help you find the countries with longest and shortest life expectancies. 
+Can you use filter() to say "I want the lifeExp that has the maximum value of lifeExp"? 
+Alternatively, look up slice_min() and slice_max() functions
+
+🧠 3. Make a new variable called pop_M which will contain the population of each country in millions. 
+
+Solution for 3) for those interested: 
+gapminder_data |> 
+  mutate(pop_M = pop/1000000)
+  
+  If you wanted to round it at the same time, you could do:
+  gapminder_data |> 
+  mutate(pop_M = round(pop/1000000, digits = 2))
+
+
+
+⏰ BREAK TIME: Until 15.00
+
+
+Feedback session
+
++ Good things
+Amazing session, nothing negative to say
+Great step-by-step explanation, really interesting challenges and exercises
+perfect lesson
+good pace, very clear
+pace was perfect, was able to follow uo
+Very interesting step-by-step session! 
+nicely explained
+Great session! well-paced and easy to understand
+very clear and to the point
+A good instructor
+Good pace and very nicely explained! 
+Amazing!!!
+very well structured and clear instructions!
+great instructions and well-structured! pace was easy to follow too!
+
+- What to improve
+no complaints or suggestions
+no such thing as a complaint with this session!
+Perfect! 
+nothing to improve
+It's perfect
+nothing to improve :-)
+
+ ----------------------------------------------------------------------------
+ 
+15.00 - 16.00 Data visualizations with ggplot2
+❓Questions
+(this is a space for you to ask questions)
+
+
+
+
+🗒️Collaborative notes
+
+    Before you create a graph, think of what you would want to plot. What are the x- and y- axes for? How shall you organize the data points? How would the variable be mapped onto the plot? What type of graph would you like to use?
+
+    aes(data, x, y, color): aesthetics, mapping data points to the plot. You may color code by a certain variable
+
+    geom_point(): under geom_ there were several functions for drawing different plots
+
+    if multiple geometry functions are used for plotting (e.g. geom_point() and geom_line() ), the sequence decides how the plots overlay each other
+
+    you may use the filter function to reduce the range and scope of the graph and make it easier to read
+
+    facet_wrap(~variable): ~ (tilda) tells R to separate the plots for individual values in the variable e.g. creates a plot per country
+
+    labs(x, y, title): labels for the axes and the figure
+
+    theme(): additional functions for modifying/refining axis label(s) etc.
+
+    ggsave(filename = "destination file name", plot = your ggplot object, width, height, dpi, unit = "cm or inch"): gives you the option to specify how you wish to save your plots. ggsave() by default recognizes the previous plot as the one you are referring to (so it is okay even if you do not assign it to be an object)
+
+    For further exploration: https://r-graph-gallery.com/
+
+
+
+
+🧠 Challenges (will be added) 
+
+🧠 1.  Modify the example so that the figure shows how life expectancy has changed over time (“year”, specifically).
+
+🧠 2. Modify the code from the previous challenge to color the points by the “continent” column. What trends do you see in the data? Are they what you expected?
+
+🧠 3. Switch the order of the point and line layers from the previous example. What happened?
+
+🧠 5. Generate boxplots to compare life expectancy between the different continents during the available years. 
+(Specifically: x axis as continent, y axis as lifeExp, and fill the boxes using different colors for continents. Facet using year.)
+💡   Hint: Use “fill” in aes function to generate solid boxes.
+
+
+
+
+Feedback session
+
++ Good things
+
